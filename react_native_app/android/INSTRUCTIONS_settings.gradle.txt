@@ -1,0 +1,22 @@
+// ============================================================================
+// FICHIER : settings.gradle
+// RÔLE : Configure Android pour inclure le module Flutter
+// EMPLACEMENT : android/settings.gradle
+// ============================================================================
+//
+// Ce fichier indique à Android où trouver le module Flutter SDK.
+//
+// INSTRUCTIONS :
+// Ajouter ces lignes à la fin du fichier settings.gradle :
+//
+// setBinding(new Binding([gradle: this]))
+// evaluate(new File(
+//   settingsDir.parentFile,
+//   'flutter_profile_sdk/.android/include_flutter.groovy'
+// ))
+//
+// Cela permet à Android de trouver et compiler le module Flutter.
+//
+// ============================================================================
+
+TODO: Ajouter les lignes ci-dessus dans android/settings.gradle

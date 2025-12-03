@@ -1,0 +1,25 @@
+// ============================================================================
+// FICHIER : FlutterViewManager.java
+// RÔLE : Bridge Android - Permet à React Native d'afficher Flutter
+// EMPLACEMENT : android/app/src/main/java/com/reactnativeapp/
+// ============================================================================
+//
+// Ce fichier contient le ViewManager Android qui :
+// - Crée une FlutterView
+// - Initialise le FlutterEngine
+// - Passe l'userId de React Native à Flutter via MethodChannel
+//
+// INSTRUCTIONS DÉTAILLÉES DANS LE GUIDE DE CODAGE
+// Ce fichier sera créé lors de la phase de codage du Bridge
+//
+// ÉTAPES :
+// 1. Créer FlutterViewManager extends SimpleViewManager
+// 2. Initialiser FlutterEngine
+// 3. Créer FlutterView et l'attacher au FlutterEngine
+// 4. Créer un @ReactProp pour userId
+// 5. Utiliser MethodChannel pour communiquer avec Flutter
+//
+// ============================================================================
+
+// TODO: Code à implémenter lors de la phase Bridge
+// Ce fichier nécessite la configuration complète de React Native avec Flutter Module
