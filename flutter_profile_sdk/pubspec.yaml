@@ -40,3 +40,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  
+  # Configuration pour module Flutter (intégration React Native)
+  module:
+    androidX: true
+    androidPackage: com.azeoo.flutter_profile_sdk
+    iosBundleIdentifier: com.azeoo.flutterProfileSdk
