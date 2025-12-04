@@ -1,19 +1,3 @@
-// ============================================================================
-// FICHIER : Tab1Screen.tsx
-// RÔLE : Onglet 1 - Input pour saisir l'User ID
-// ============================================================================
-//
-// Cet écran contient :
-// - Un TextInput pour saisir l'ID utilisateur (1 ou 3)
-// - Un bouton "Sauvegarder" qui enregistre l'ID dans AsyncStorage
-//
-// INSTRUCTIONS :
-// 1. Utiliser useState pour gérer la valeur du TextInput
-// 2. Utiliser AsyncStorage pour sauvegarder l'ID
-// 3. Afficher une alerte de confirmation après sauvegarde
-//
-// ============================================================================
-
 import React, { useState } from 'react';
 import { View, TextInput, Button, StyleSheet, Text } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -50,11 +34,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     padding: 20,
+    backgroundColor: '#fff',
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 20,
+    textAlign: 'center',
   },
   input: {
     borderWidth: 1,

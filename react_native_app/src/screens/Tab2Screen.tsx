@@ -1,25 +1,7 @@
-// ============================================================================
-// FICHIER : Tab2Screen.tsx
-// RÔLE : Onglet 2 - Affiche le SDK Flutter
-// ============================================================================
-//
-// Cet écran :
-// - Récupère l'User ID depuis AsyncStorage
-// - Affiche le composant FlutterProfileView avec cet ID
-// - Se met à jour quand l'utilisateur change d'onglet
-//
-// INSTRUCTIONS :
-// 1. Utiliser useState pour stocker l'userId
-// 2. Utiliser useEffect pour récupérer l'ID depuis AsyncStorage
-// 3. Passer l'userId au composant FlutterProfileView
-//
-// ============================================================================
-
-import React, { useState, useEffect } from 'react';
-import { View, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { View, StyleSheet, Text } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import FlutterProfileView from '../components/FlutterProfileView';
 
 export default function Tab2Screen() {
   const [userId, setUserId] = useState('1'); // Valeur par défaut
@@ -35,7 +17,10 @@ export default function Tab2Screen() {
   
   return (
     <View style={styles.container}>
-      <FlutterProfileView userId={userId} style={styles.flutterView} />
+      <Text style={styles.text}>User ID: {userId}</Text>
+      <Text style={styles.info}>
+        Ici s'affichera le SDK Flutter
+      </Text>
     </View>
   );
 }
@@ -43,8 +28,17 @@ export default function Tab2Screen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f0f0f0',
   },
-  flutterView: {
-    flex: 1,
+  text: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  info: {
+    fontSize: 14,
+    color: '#666',
   },
 });
